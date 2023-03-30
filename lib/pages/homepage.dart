@@ -1,3 +1,6 @@
+import 'dart:collection';
+
+import 'package:ecoconnect/pages/login.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 class Homepage extends StatelessWidget {
@@ -32,7 +35,12 @@ class Homepage extends StatelessWidget {
               ),
                 SizedBox(width: 50,),
                  IconButton(
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const Hestia()),
+  );
+                },
                 tooltip: 'Login',
                  icon:Icon(Icons.person,color: Colors.black,size: 30,)),
               

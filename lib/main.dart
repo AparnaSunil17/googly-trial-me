@@ -1,4 +1,5 @@
 import 'package:ecoconnect/pages/homepage.dart';
+import 'package:ecoconnect/pages/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
+      home: Hestia(),
       
     );
   }
